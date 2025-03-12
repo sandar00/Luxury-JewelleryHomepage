@@ -12,6 +12,10 @@ body.dark-mode {
     background-color: #222 !important;
 }
 
+#toggle-icon{
+    background-color: #5bb960;
+}
+
 .dark-mode .btn-primary {
     background-color: #72dd78;
     color: black;
