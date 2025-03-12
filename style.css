@@ -1,0 +1,273 @@
+/* body */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #222 !important;
+}
+
+.dark-mode .btn-primary {
+    background-color: #72dd78;
+    color: black;
+}
+
+.dark-mode a {
+    color: #72dd78;
+}
+
+/* Hero section */
+.hero-section h1, .hero-section p, .hero-section .shops {
+    color: #333; /* Dark text color by default */
+}
+
+body.dark-mode .hero-section h1, body.dark-mode .hero-section p,  body.dark-mode .hero-section .shops{
+    color: white; /* White text in dark mode */
+}
+
+.shops{
+    background-color: #72dd78;
+}
+
+/* About Section */
+#about {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+body.dark-mode #about {
+    background-color: #222; /* Dark background in dark mode */
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+body.dark-mode #about h2 {
+    color: #72dd78; /* Green color in dark mode */
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    padding: 0 15px;
+}
+
+body.dark-mode #about p {
+    color: #ddd; /* Light text in dark mode */
+}
+
+#about .container {
+    max-width: 1000px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+body.dark-mode #contact {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+}
+
+body.dark-mode #contact h2 {
+    color: #72dd78; /* Green color in dark mode */
+}
+
+#contact .contact-info {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#contact .contact-info p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 320px;
+}
+
+body.dark-mode #contact .contact-info p {
+    color: #ddd; /* Light text in dark mode */
+}
+
+#contact .contact-info i {
+    font-size: 2.5rem;
+    margin-right: 10px;
+    color: #72dd78;
+}
+
+body.dark-mode #contact .contact-info i {
+    color: #ddd; /* Light color for icons in dark mode */
+}
+
+#contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+body.dark-mode #contact form {
+    background-color: #222;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+#contact .form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+body.dark-mode #contact .form-label {
+    color: #ddd; /* Light text in dark mode */
+}
+
+#contact .form-control {
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+body.dark-mode #contact .form-control {
+    background-color: #333; /* Dark background  form fields */
+    color: #fff; /* Light text in dark mode */
+    border-color: #444; /* Dark border */
+}
+
+#contact .form-control:focus {
+    border-color: #72dd78;
+    box-shadow: 0 0 5px rgba(114, 221, 120, 0.5);
+}
+
+body.dark-mode #contact .form-control:focus {
+    border-color: #72dd78;
+    box-shadow: 0 0 5px rgba(114, 221, 120, 0.5);
+}
+
+#contact .btn-primary {
+    background-color: #72dd78;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#contact .btn-primary:hover {
+    background-color: #5bb960;
+}
+
+/*  responsiveness */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center; /* Center nav items on mobile */
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem; /* Adjust font size on smaller screens */
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    /* Adjust collection images on mobile */
+    #collection .col-md-4 {
+        flex: 0 0 100%; /*  collection items vertically */
+        max-width: 100%;
+        margin-bottom: 20px; /* Space between items */
+    }
+
+    /* About Section */
+    #about h2 {
+        font-size: 2.5rem; /* Smaller header on mobile */
+    }
+
+    #about p {
+        font-size: 1rem; /* Adjust text size */
+    }
+
+    /* Contact section */
+    #contact .contact-info {
+        flex-direction: column; /* Stack contact info on mobile */
+        gap: 15px;
+    }
+
+    /* Contact form fields */
+    #contact .form-control {
+        font-size: 1rem;
+    }
+
+    #contact .btn-primary {
+        padding: 8px 15px; /* Smaller button padding */
+    }
+
+    #contact form {
+        padding: 20px; /* Adjust form padding */
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 100px 20px; /* Adjust padding for mobile */
+    }
+
+    .shops {
+        width: 100%; /* Make shop button full width on smaller screens */
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero-section h1 {
+        font-size: 3rem; /* Adjust font size on larger tablets */
+    }
+
+    #collection .col-md-4 {
+        flex: 0 0 48%; /* Two items per row */
+        max-width: 48%;
+    }
+
+    #about h2 {
+        font-size: 2.5rem;
+    }
+
+    #contact .contact-info {
+        flex-wrap: wrap;
+    }
+}
+
